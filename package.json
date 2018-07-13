@@ -1,0 +1,19 @@
+{
+  "name": "itelios-frontend-challenge",
+  "version": "1.0.0",
+  "description": "![Itelios](http://www.itelios.com.br/images/logo_itelios_orange@2x.png)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucbic/itelios-frontend-challenge.git"
+  },
+  "author": "Lucas Bicudo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucbic/itelios-frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/lucbic/itelios-frontend-challenge#readme"
+}
