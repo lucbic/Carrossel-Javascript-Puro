@@ -11,8 +11,6 @@ body {
 .container {
   margin: 100px auto 0;
   width: $widget-width;
-  // height: 500px;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   h2 {
@@ -32,10 +30,10 @@ body {
   margin-bottom: 18px
 }
 
-.product {
+.item {
   height: 268px;
   border: 1px solid $light-grey;
-  padding: 0 20px 20px;
+  padding: 10px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -49,23 +47,23 @@ body {
   }
 }
 
-.product__price-tag {
+.item__price-tag {
   font-family: roboto-bold;
   font-size: 18px;
   color: $price-grey;
 }
 
-.product__installments-tag {
+.item__conditions-tag {
   font-family: roboto-bold;
   font-size: 14px;
   color: $price-grey;
 }
 
-.product__description {
+.item__description {
   color: $description-grey;
 }
-.product__price,
-.product__installments {
+.item__price,
+.item__conditions {
   color: $title-grey;
 }
 
