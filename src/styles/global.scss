@@ -7,10 +7,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $black;
+  background: $background-grey;
 }
 
 .container {
   margin: 100px auto 0;
+  background: #fff;
+  padding: 20px 15px 100px;
+  width: fit-content;
+}
+
+.widget {
   width: $widget-width;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
