@@ -55,7 +55,8 @@ function populate (data) {
   itemImg.src = imgPath(data.item.imageName)
   itemDescription.textContent = showLess(90, data.item.name)
   itemPrice.textContent = data.item.price
-  itemConditions.textContent = formatConditions(data.item.productInfo.paymentConditions)
+  itemConditions.textContent =
+    formatConditions(data.item.productInfo.paymentConditions)
 }
 
 function createSlides (recommendation) {
@@ -90,6 +91,15 @@ function createSlides (recommendation) {
     conditions.appendChild(conditionsTag)
     conditions.appendChild(document.createTextNode(' sem juros'))
 
+    let button = document.createElement('a')
+    button.className = 'rec__add-btn'
+    let buttonImg = document.createElement('img')
+    buttonImg.src = '/static/images/baseline-add_shopping_cart-24px.svg'
+    button.appendChild(document.createTextNode('adicionar ao carrinho'))
+    button.appendChild(document.createElement('div'))
+    button.appendChild(buttonImg)
+
+
     // add json data to attributes
     img.src = imgPath(recommendation[index].imageName)
     description.textContent = showLess(90, recommendation[index].name)
@@ -102,6 +112,7 @@ function createSlides (recommendation) {
     newSlide.appendChild(description)
     newSlide.appendChild(price)
     newSlide.appendChild(conditions)
+    newSlide.appendChild(button)
 
     // append new slide to swiper
     swiperWrapper.appendChild(newSlide)
