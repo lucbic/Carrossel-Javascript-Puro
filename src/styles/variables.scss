@@ -2,14 +2,23 @@
 $title-grey: #5e6774;
 $light-grey: #edeaea;
 $black: #000000;
+$white: #ffffff;
 $description-grey: #2c2d2e;
 $price-grey: #323d4f;
 $background-grey: #e1dddd;
+$card-grey: #f4f4f4;
 $swiper-bullet: #aeaeae;
 $swiper-bullet-active: #333c4e;
+$button-orange: #f87200;
 
 // widget
 $widget-width: 864px;
+$slide-height: 268px;
+$slide-expanded-height: 322px;
+$slide-width: $widget-width / 4;
+
+// transition times
+$slide-hover: 0.2s;
 
 // queries breakpoints
 $breakpoint-sm: 576px;
