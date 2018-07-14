@@ -1,2 +1,74 @@
 @import 'reset';
+@import 'variables';
 @import 'fonts';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $black;
+}
+
+.container {
+  margin: 100px auto 0;
+  width: $widget-width;
+  // height: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  h2 {
+    font-family: roboto-condensed;
+    font-size: 22px;
+    color: $title-grey;
+  }
+}
+
+.title__visited {
+  grid-column: 1 / 2;
+  margin-bottom: 18px
+}
+
+.title__interest {
+  grid-column: 2 / -1;
+  margin-bottom: 18px
+}
+
+.product {
+  height: 268px;
+  border: 1px solid $light-grey;
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  img {
+    width: 116px;
+    margin: 0 auto;
+  }
+  p {
+    font-family: roboto;
+    font-size: 11px;
+  }
+}
+
+.product__price-tag {
+  font-family: roboto-bold;
+  font-size: 18px;
+  color: $price-grey;
+}
+
+.product__installments-tag {
+  font-family: roboto-bold;
+  font-size: 14px;
+  color: $price-grey;
+}
+
+.product__description {
+  color: $description-grey;
+}
+.product__price,
+.product__installments {
+  color: $title-grey;
+}
+
+.carousel {
+  grid-column: 2 / -1;
+}
