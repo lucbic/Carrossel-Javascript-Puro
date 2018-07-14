@@ -1,7 +1,18 @@
-require('./styles/global.scss')
+require('../node_modules/swiper/dist/css/swiper.min.css')
+import Styles from './styles/global.scss'
+import Swiper from 'swiper'
 import request from './js/request'
 
-const teste = 'iPhone SE Apple com 16GB, Tela 4”, iOS 9, Sensor de Impressão Digital, Câmera iSight 12MP, Wi-Fi, 3G/4G, GPS, MP3, Bluetooth e NFC - Cinza Espacial'
+// globals
+var mySwiper = new Swiper ('.swiper-container', {
+  pagination: { el: '.swiper-pagination' },
+  slidesPerView: 3,
+  breakpoints: {
+    [Styles.breakpointLg]: {
+      slidesPerView: 1
+    }
+  }
+})
 
 // onload
 window.onload = () => {

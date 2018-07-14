@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
+        exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015']
@@ -41,6 +41,10 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: 'style-loader!css-loader!sass-loader',
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
       },
       {
         test: /\.html$/,

@@ -1,12 +1,23 @@
+// colors
 $title-grey: #5e6774;
 $light-grey: #edeaea;
 $black: #000000;
 $description-grey: #2c2d2e;
 $price-grey: #323d4f;
 
+// widget
 $widget-width: 864px;
-// breakpoints
+
+// queries breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+
+:export {
+  widgetWidth: $widget-width;
+  breakpointSm: $breakpoint-sm;
+  breakpointMd: $breakpoint-md;
+  breakpointLg: $breakpoint-lg;
+  breakpointXl: $breakpoint-xl;
+}
