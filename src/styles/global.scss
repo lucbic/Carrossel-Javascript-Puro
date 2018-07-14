@@ -87,5 +87,18 @@ body {
 }
 
 .swiper-slide {
-  width: $widget-width / 4 !important;
+  width: $widget-width / 4;
+}
+
+.swiper-pagination {
+  position: static;
+  grid-column: 2 / -1;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 4px;
+  background: $swiper-bullet;
+  outline: 0;
+  &-active { background: $swiper-bullet-active; }
 }
