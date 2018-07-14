@@ -23,7 +23,6 @@ window.onload = () => {
   request('/static/json/products.json').then(response => {
     const data = response[0].data
     populate(data)
-    console.log(data)
   }).catch(error => {
     console.log(error)
   })
