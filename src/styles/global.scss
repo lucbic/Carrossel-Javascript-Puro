@@ -40,19 +40,20 @@ body {
 
 .item,
 .recommendation {
-  height: 268px;
+  height: $slide-height;
   border: 1px solid $light-grey;
-  padding: 10px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  padding: 0 20px;
+  background: $white;
+  text-align: center;
   img {
+    margin-top: 15px;
     width: 116px;
-    margin: 0 auto;
   }
   p {
+    text-align: left;
     font-family: roboto;
     font-size: 11px;
+    margin-top: 15px
   }
 }
 
