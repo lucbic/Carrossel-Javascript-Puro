@@ -37,7 +37,7 @@ function imgPath (path) {
   return path.replace(url, '/static/images/')
 }
 
-function conditions (str) {
+function formatConditions (str) {
   return str.replace('ou até ','').replace(' sem juros','')
 }
 
@@ -50,5 +50,5 @@ function populate (data) {
   itemImg.src = imgPath(data.item.imageName)
   itemDescription.textContent = showLess(90, data.item.name)
   itemPrice.textContent = data.item.price
-  itemConditions.textContent = conditions(data.item.productInfo.paymentConditions)
+  itemConditions.textContent = formatConditions(data.item.productInfo.paymentConditions)
 }
