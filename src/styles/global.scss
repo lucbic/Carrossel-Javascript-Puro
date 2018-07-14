@@ -30,7 +30,8 @@ body {
   margin-bottom: 18px
 }
 
-.item {
+.item,
+.recommendation {
   height: 268px;
   border: 1px solid $light-grey;
   padding: 10px 20px 20px;
@@ -47,26 +48,36 @@ body {
   }
 }
 
-.item__price-tag {
+.item__price-tag,
+.rec__price-tag {
   font-family: roboto-bold;
   font-size: 18px;
   color: $price-grey;
 }
 
-.item__conditions-tag {
+.item__conditions-tag,
+.rec__conditions-tag {
   font-family: roboto-bold;
   font-size: 14px;
   color: $price-grey;
 }
 
-.item__description {
+.item__description,
+.red__description {
   color: $description-grey;
 }
 .item__price,
-.item__conditions {
+.item__conditions,
+.rec__price,
+.rec__conditions {
   color: $title-grey;
 }
 
 .swiper-container {
   grid-column: 2 / -1;
+  width: 100%;
+}
+
+.swiper-slide {
+  width: $widget-width / 4 !important;
 }
