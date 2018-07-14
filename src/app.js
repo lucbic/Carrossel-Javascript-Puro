@@ -5,11 +5,16 @@ import request from './js/request'
 
 // globals
 var mySwiper = new Swiper ('.swiper-container', {
-  pagination: { el: '.swiper-pagination' },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
   slidesPerView: 3,
+  slidesPerGroup: 3,
   breakpoints: {
     [Styles.breakpointLg]: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      slidesPerGroup: 1
     }
   }
 })
