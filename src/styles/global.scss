@@ -13,8 +13,9 @@ body {
 .container {
   margin: 100px auto 0;
   background: #fff;
-  padding: 20px 15px 100px;
+  padding: 20px 15px;
   width: fit-content;
+  height: 500px;
 }
 
 .widget {
@@ -122,16 +123,28 @@ body {
 .swiper-container {
   grid-column: 2 / -1;
   width: 100%;
+  height: $slide-expanded-height;
 }
 
 .swiper-slide {
+  z-index: 1;
   width: $widget-width / 4;
+  transition: height $slide-hover;
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, $white 0%, $card-grey 100%);
+    height: $slide-expanded-height;
+    .rec__add-btn {
+      opacity: 1;
+      transition: opacity ($slide-hover * 2);
+    }
+  }
 }
 
 .swiper-pagination {
-  position: static;
-  grid-column: 2 / -1;
+  top: $slide-height;
   margin-top: 10px;
+  z-index: 0;
 }
 
 .swiper-pagination-bullet {
