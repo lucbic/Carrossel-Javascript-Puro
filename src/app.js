@@ -1,4 +1,3 @@
-require('../node_modules/swiper/dist/css/swiper.min.css')
 import Styles from './styles/global.scss'
 import Swiper from 'swiper'
 import request from './js/request'
