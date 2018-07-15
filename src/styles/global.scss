@@ -140,6 +140,10 @@ body {
   }
 }
 
+.swiper-wrapper {
+  height: $slide-height;
+}
+
 .swiper-pagination {
   top: $slide-height;
   margin-top: 10px;
