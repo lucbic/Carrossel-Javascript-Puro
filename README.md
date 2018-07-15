@@ -1,39 +1,27 @@
-![Itelios](http://www.itelios.com.br/images/logo_itelios_orange@2x.png)
+# Itelios Frontend Challenge - Lucas Bicudo
 
-# Itelios Frontend Challenge
+- O projeto foi executado utilizando Javascript ES6 puro, transpilado com Webpack + Babel.
+- A única biblioteca externa utilizada foi a [Swiper](http://idangero.us/swiper/get-started/) para a construção do carrossel.
+- O arquivo products.json é lido via chamada ajax de forma assíncrona, utilizando Promise.
+- A estilização foi feita utilizando Sass, de forma modular - com arquivos separados para variáveis, fontes, queries e css-reset.
+- Utilizei css transitions nos eventos de hover para obter um design fluido. 
+- O widget desenvolvido possui responsividade mobile; foram utilizados 3 breakpoints para adaptação a qualquer tipo de dispositivo.
+- Verifiquei que estava faltando uma imagem de um dos produtos a ser exibido, então tomei a liberdade de fazer o download de uma imagem correspondente.
 
-Bem-vindo ao desafio de admissão de front-end da Itelios! O que preparamos para este desafio é um pedacinho do que você irá fazer aqui na Itelios, caso seja admitido.
+O tempo total de desenvolvimento foi em torno de 12 horas. Esta foi minha primeira vez configurando o webpack por conta própria, o que acabou consumindo uma grande parte do tempo de desenvolvimento.
 
-O objetivo do desafio é simples: Consumir uma json via xhttp e, com o resultado dele, montar um widget de prateleira de cross-sell. Na resposta deste request você receberá uma lista de produtos. Esta lista servirá para montar um pequeno carrossel de produtos. 
 
-## Design
+## Como executar
 
-- A prateleira apresentada deve seguir o [seguinte design](desafio-front-end-itelios.jpg)
-- Baseado neste layout, faça uma adaptação responsiva para celulares.
+- Clone o repositório em sua máquina
+- Instale as dependências necessárias (necessário ter npm instalado)
+- Execute o dev-server
 
-## Como realizar o teste
+```
+git clone https://github.com/lucbic/itelios-frontend-challenge.git
+cd itelios-frontend-challenge
+npm install
+npm run dev
+```
+A aplicação estará disponível em `http://localhost:8080/`
 
-- Faça um fork deste repositório em seu GitHub
-- Adicione ao Readme uma descrição de como executar seu projeto
-- Descreva as funcionalidades do seu desafio, venda seu peixe! Por exemplo, se fez a prateleira com javascript puro, porém utilizou uma biblioteca para o carrossel, deixe isso no Readme. Se usou ES6 com um transpiler, conte isso pra gente. 
-- Não há um limite de tempo, porém consideramos ideal não gastar mais que 8h neste desafio
-- Faça commits parciais, para que possamos acompanhar o seu desenvolvimento.
-- Em caso de dúvidas, entre em contato com flora.braz@itelios.com
-
-## Dicas
- 
-- O ícone do botão é o add-shopping-plus, do Material Design. https://material.io/icons/
-- A fontes utilizadas são Roboto Condensed Bold (títulos), Roboto Regular (texto corrido) e Roboto Bold (preço e preço parcelado). 
-- We **<3** Vanilla Javascript. Tente executar este teste usando javascript puro. Só utilize bibliotecas como último recurso.
-- We **<3** CSS responsivo, organizado, modular e feito com pré-processadores. Sinta-se livre para usar a arquitetura CSS que achar mais adequada. 
-- Trabalhamos com clientes perfeccionistas, portanto tenha atenção com espaçamentos, tamanhos e estilos de fonte. 
-
-## Critérios de avaliação
-
-- Alcançar os objetivos propostos
-- Qualidade de código
-- Commits parciais, mostrando a linha de desenvolvimento
-- Boa descrição das funcionalidades do desafio
-- Não utilização de bibliotecas ou frameworks
-- Fidelidade ao design proposto
-- Adaptação mobile
