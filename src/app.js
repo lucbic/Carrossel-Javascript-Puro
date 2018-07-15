@@ -15,7 +15,11 @@ var mySwiper = new Swiper ('.swiper-container', {
   slidesPerView: 3,
   slidesPerGroup: 3,
   breakpoints: {
-    [Styles.breakpointLg]: {
+    [Styles.breakpointLg.slice(0, -2)]: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    },
+    [Styles.breakpointMd.slice(0, -2)]: {
       slidesPerView: 1,
       slidesPerGroup: 1
     }
