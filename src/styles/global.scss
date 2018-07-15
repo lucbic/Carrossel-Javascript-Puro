@@ -163,3 +163,20 @@ body {
   outline: 0;
   &-active { background: $swiper-bullet-active; }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 0;
+  height: $slide-height;
+  margin-top: 0;
+  width: 50px;
+  background-size: 12px;
+  background-image: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}

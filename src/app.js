@@ -8,6 +8,10 @@ var mySwiper = new Swiper ('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   slidesPerView: 3,
   slidesPerGroup: 3,
   breakpoints: {
