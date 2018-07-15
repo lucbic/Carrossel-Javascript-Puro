@@ -8,11 +8,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $black;
   background: $background-grey;
+  display: flex;
 }
 
 .container {
   margin: 100px auto 0;
-  background: #fff;
+  background: $white;
   padding: 20px 15px;
   width: fit-content;
   height: 500px;
@@ -93,6 +94,7 @@ body {
   bottom: 15px;
   height: 40px;
   width: 180px;
+  background: $white;
   border: 1px solid $light-grey;
   font-family: roboto-condensed;
   font-size: 14px;
@@ -114,9 +116,7 @@ body {
     background: $button-orange;
   }
   &:hover {
-    div {
-      opacity: 1;
-    }
+    div { opacity: 1; }
   }
 }
 
@@ -127,12 +127,11 @@ body {
 }
 
 .swiper-slide {
-  z-index: 1;
   width: $widget-width / 4;
   transition: height $slide-hover;
   &:hover {
     cursor: pointer;
-    background: linear-gradient(to top, $white 0%, $card-grey 100%);
+    background: linear-gradient(to top, $white 0%, $card-gradient 100%);
     height: $slide-expanded-height;
     .rec__add-btn {
       opacity: 1;
