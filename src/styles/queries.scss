@@ -1,0 +1,35 @@
+@media all and (max-width: $breakpoint-lg) {
+  .widget {
+    width: (($widget-width / 4) * 3);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width: $breakpoint-md) {
+  .widget {
+    width: $widget-width / 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: $breakpoint-sm) {
+  .widget {
+    width: $widget-width / 4;
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .title__interest,
+  .swiper-container {
+    grid-column: 1 / 2;
+  }
+
+  .title__interest {
+    grid-row: 3 / 4;
+    margin-top: 18px;
+  }
+}

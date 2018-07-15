@@ -16,7 +16,6 @@ body {
   background: $white;
   padding: 20px 15px;
   width: fit-content;
-  height: 400px;
 }
 
 .widget {
@@ -129,7 +128,7 @@ body {
 
 .swiper-container {
   grid-column: 2 / -1;
-  width: 100%;
+  max-width: 100%;
   height: $slide-expanded-height;
 }
 
@@ -180,3 +179,5 @@ body {
 .swiper-button-next {
   right: 0;
 }
+
+@import 'queries';
