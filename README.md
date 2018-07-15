@@ -6,7 +6,7 @@
 - A estilização foi feita utilizando Sass, de forma modular - com arquivos separados para variáveis, fontes, queries e css-reset.
 - Utilizei css transitions nos eventos de hover para obter um design fluido. 
 - O widget desenvolvido possui responsividade mobile; foram utilizados 3 breakpoints para adaptação a qualquer tipo de dispositivo.
-- Verifiquei que estava faltando uma imagem de um dos produtos a ser exibido, então tomei a liberdade de fazer o download de uma imagem correspondente.
+- Verifiquei que estava faltando uma imagem de um dos produtos a ser exibidos, então tomei a liberdade de fazer o download de uma imagem correspondente.
 
 O tempo total de desenvolvimento foi em torno de 12 horas. Esta foi minha primeira vez configurando o webpack por conta própria, o que acabou consumindo uma grande parte do tempo de desenvolvimento.
 
