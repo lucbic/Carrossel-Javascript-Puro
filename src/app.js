@@ -17,18 +17,30 @@ var mySwiper = new Swiper ('.swiper-container', {
     }
   }
 })
+var svg
+var data
 
 // onload
 window.onload = () => {
   request('/static/json/products.json').then(response => {
-    const data = response[0].data
-    populate(data)
+    data = JSON.parse(response)[0].data
+    getSvg()
   }).catch(error => {
     console.log(error)
   })
 }
 
 // functions
+function getSvg () {
+  request('/static/images/baseline-add_shopping_cart-24px.svg').then(response => {
+    svg = response
+    populate()
+  }).catch(error => {
+    console.log(error)
+    return false
+  })
+}
+
 function showLess (n, text) {
   if (text.lenght <= n) { return text }
   const sub = text.substr(0, n-1)
@@ -44,7 +56,7 @@ function formatConditions (str) {
   return str.replace('ou até ','').replace(' sem juros','')
 }
 
-function populate (data) {
+function populate () {
   createSlides(data.recommendation)
 
   const itemImg = document.querySelector('.item__img')
@@ -93,10 +105,16 @@ function createSlides (recommendation) {
 
     let button = document.createElement('a')
     button.className = 'rec__add-btn'
-    let buttonImg = document.createElement('img')
-    buttonImg.src = '/static/images/baseline-add_shopping_cart-24px.svg'
+
+    let lateralBar = document.createElement('div')
+    lateralBar.className = 'add-btn__lateral-bar'
+
+    let buttonImg = document.createElement('div')
+    buttonImg.className = 'add-btn__img'
+    buttonImg.innerHTML = svg
+
     button.appendChild(document.createTextNode('adicionar ao carrinho'))
-    button.appendChild(document.createElement('div'))
+    button.appendChild(lateralBar)
     button.appendChild(buttonImg)
 
 

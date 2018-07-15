@@ -16,7 +16,7 @@ body {
   background: $white;
   padding: 20px 15px;
   width: fit-content;
-  height: 500px;
+  height: 400px;
 }
 
 .widget {
@@ -92,32 +92,39 @@ body {
   justify-content: center;
   position: absolute;
   bottom: 15px;
+  left: 50%;
+  transform: translatex(-50%);
   height: 40px;
-  width: 180px;
+  width: 180px;;
   background: $white;
   border: 1px solid $light-grey;
   font-family: roboto-condensed;
   font-size: 14px;
   color: $price-grey;
   margin: 0 auto;
-  img {
-    width: 20px;
-    margin: 0;
-    margin-left: 7px;
-  }
-  div {
-    opacity: 0;
-    transition: opacity $slide-hover;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 7px;
-    background: $button-orange;
-  }
   &:hover {
-    div { opacity: 1; }
+    .add-btn__lateral-bar { opacity: 1; }
+    .add-btn__img { fill: $button-orange; }
   }
+}
+
+.add-btn__img {
+  fill: $price-grey;
+  transition: fill $slide-hover;
+  width: 20px;
+  margin: 0;
+  margin-left: 7px;
+}
+
+.add-btn__lateral-bar {
+  opacity: 0;
+  transition: opacity $slide-hover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 7px;
+  background: $button-orange;
 }
 
 .swiper-container {
