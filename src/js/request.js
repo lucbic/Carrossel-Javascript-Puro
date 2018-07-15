@@ -6,7 +6,7 @@ export default (path) => {
 
     xhttp.onload = () => {
       if (xhttp.status >= 200 && xhttp.status < 300) {
-        resolve(JSON.parse(xhttp.response))
+        resolve(xhttp.response)
       } else {
         reject(xhttp.statusText)
       }
